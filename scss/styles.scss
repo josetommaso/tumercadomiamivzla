@@ -1,0 +1,279 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+//Variables
+
+$dark-green: #05373A;
+$light-blue: #C4DFE6;
+$darker-blue: #0067D5;
+
+.title {
+  font-family: 'Oswald', sans-serif;
+}
+
+/* NAVIGATION */
+
+.navbar {
+  padding-bottom: 0;
+  transition: .5s;
+}
+
+.navbar-brand img {
+  transition: .5s;
+}
+
+
+.nav-link {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  color: $dark-green !important;
+  transition: ease 0.2s;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid $dark-green;
+}
+
+@media (max-width: 992px) {
+  .nav-item {
+    margin-top: 5px;
+    text-align: center;
+  }
+  .nav-link:hover {
+    border-bottom: none;
+  }
+}
+
+.navbar {
+  background-color: rgba(149, 175, 192, .70) !important;
+}
+
+/* SCROLL NAVBAR */
+
+.scrolled {
+  background-color: rgba(149, 175, 192,1.0) !important;
+  padding: 10px;
+  transition: .5s;
+  padding-bottom: 0;
+}
+
+.text-color {
+  // color: white !important;
+}
+
+.nav-shadow {
+  box-shadow: 0px 2px 5px #000000;
+}
+
+/* HOME SECTION */
+
+#home-section {
+  background-image: url("../assets/images/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+}
+
+.home-inner {
+  // font-family: 'Carter One', cursive;
+  // font-family: 'Francois One', sans-serif;
+  // font-family: 'Permanent Marker', cursive;
+  // font-family: 'Special Elite', cursive;
+  font-family: 'Viga', sans-serif;
+  padding-top: 205px;
+}
+
+.letterspacing {
+  letter-spacing: 2px;
+}
+
+.yellow {
+  color: yellow;
+  text-shadow: 5px 0px 10px #000000;
+}
+
+.blue {
+  color: blue;
+  text-shadow: 5px 0px 10px #000000;
+}
+
+.red {
+  color: red;
+  text-shadow: 5px 0px 10px #000000;
+}
+
+.inner-text {
+  color: $light-blue;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 5px;
+  text-shadow: 2px 0px 10px #000000;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+/* QUIENES SOMOS SECTION */
+
+.quienes-somos {
+  background-color: #f8f8f8;
+}
+
+.quienes-somos p {
+  line-height: 35px;
+  font-family: 'Karla', sans-serif;
+}
+
+.first-icons {
+  font-size: 50px;
+  color: $dark-green;
+}
+
+.first-icons p {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* COMBOS SECTION */
+
+.card {
+  background-color: #f8f8f8;
+}
+
+.card h4 {
+  color: $dark-green;
+}
+
+.card-body ul {
+  list-style-type: none;
+}
+
+.fa-check-circle {
+  color: #64dd17;
+}
+
+.card-body ul li {
+  color: $dark-green;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 5px;
+}
+
+@media (max-width: 576px) {
+  .card {
+    margin-bottom: 30px;
+  }
+}
+
+/* PARALLAX */
+
+#parallax {
+  background: url("../assets/images/parallax.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 49.5vh;
+}
+
+#parallax .filter {
+  background-color: rgba(2, 2, 2, .50);
+  background-size: cover;
+  height: 465px;
+}
+
+
+.ptitle {
+  padding: 215px 20px;
+  color: $light-blue;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-shadow: 5px 0px 10px #000000;
+}
+
+/* CONTÁCTANOS SECTION */
+
+.contacto {
+  background-color: #f8f8f8;
+}
+
+.contacto-list ul {
+  list-style-type: none;
+  padding-top: 15%;
+}
+
+.contacto-list ul li {
+  padding: 20px 10px;
+  font-size: 20px;
+}
+
+.contacto-list ul li i {
+  font-size: 30px;
+}
+
+.contacto-list ul li span {
+  padding-left: 10px;
+}
+
+.fa-phone {
+  color: #2ECC71;
+}
+
+.fa-envelope {
+  color: #7D3C98;
+}
+
+.fa-instagram {
+    color: #517FA4;
+}
+
+.fa-whatsapp {
+  color: #25D366;
+}
+
+@media (max-width: 992px) {
+  .contacto-list ul {
+    padding-left: 0px;
+  }
+}
+
+label.asterisk::before {
+  content: "*";
+  color: red;
+}
+
+label.error {
+  color: red !important;
+  }
+
+/* TESTIMONIOS SECTION */
+
+.testimonios img {
+  border-radius: 50%;
+}
+
+.testimonios p {
+  font-family: 'Karla', sans-serif;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #302F2F;
+  color: $light-blue;
+  font-family: 'Karla', sans-serif;
+}
+
+footer i {
+  font-size: 25px;
+}
+
+.copyright {
+  background-color: #1B1B1E;
+  margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  footer p {
+    border-bottom: 1px solid $light-blue;
+    padding-bottom: 15px;
+  }
+}
